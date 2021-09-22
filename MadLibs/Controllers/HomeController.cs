@@ -10,10 +10,10 @@ namespace MadLibs.Controllers
     public ActionResult Form() { return View(); }
 
     [Route("/")]
-    public ActionResult MadLibs()
+    public ActionResult MadLibs(string character)
     {
       FillInTheBlanks usersWords = new FillInTheBlanks();
-      usersWords.Character = "Chris";
+      usersWords.Character = character;
       return View(usersWords);
     }
   }
