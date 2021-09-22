@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using MadLibs.Models;
 
 namespace MadLibs.Controllers
 {
@@ -9,6 +10,11 @@ namespace MadLibs.Controllers
     public ActionResult Form() { return View(); }
 
     [Route("/")]
-    public ActionResult MadLibs() { return View(); }
+    public ActionResult MadLibs()
+    {
+      FillInTheBlanks usersWords = new FillInTheBlanks();
+      usersWords.Character = "Chris";
+      return View(usersWords);
+    }
   }
 }
