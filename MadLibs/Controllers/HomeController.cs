@@ -9,6 +9,6 @@ namespace MadLibs.Controllers
     public string Form() { return "Form here soon"; }
 
     [Route("/")]
-    public string MadLibs() { return "Funny story here soon"; }
+    public ActionResult MadLibs() { return View(); }
   }
 }
