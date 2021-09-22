@@ -17,6 +17,8 @@
 
 * _C#_
 * _.NET 5.0.100_
+* _ASP.NET Core MVC_
+* _Microsoft.NET.Sdk.Web_
 * _Microsoft.NET.Test.Sdk 15.0.0_
 * _MSTest.TestAdapter 1.3.2_
 * _MSTest.TestFramework 1.3.2_
